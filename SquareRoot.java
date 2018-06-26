@@ -30,6 +30,6 @@ public class SquareRoot {
                 sc.nextLine();
             }
         }
-
+        sc.close()
     }
 }
