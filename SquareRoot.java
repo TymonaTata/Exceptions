@@ -25,7 +25,7 @@ public class SquareRoot {
                 System.out.println("Podałeś niedozwolony znak. Spróbuj jeszcze raz!");
 
             } catch (IllegalArgumentException e) {
-                System.out.print("Podałeś liczbę ujemną. Spróbuj jeszcze raz! ");
+                System.out.println("Podałeś liczbę ujemną. Spróbuj jeszcze raz! ");
             } finally {
                 sc.nextLine();
             }
