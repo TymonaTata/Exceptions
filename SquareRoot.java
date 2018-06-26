@@ -12,10 +12,10 @@ public class SquareRoot {
 
         while(wrongInput) {
             try {
-                System.out.println("Podaj dowolną liczbę większą od 0:");
+                System.out.println("Podaj dowolną liczbę dodatnią:");
                 number = sc.nextDouble();
 
-                if (number <= 0) throw new IllegalArgumentException();
+                if (number < 0) throw new IllegalArgumentException();
 
                 wrongInput = false;
                 result = Math.sqrt(number);
@@ -25,7 +25,7 @@ public class SquareRoot {
                 System.out.println("Podałeś niedozwolony znak. Spróbuj jeszcze raz!");
 
             } catch (IllegalArgumentException e) {
-                System.out.print("Podałeś liczbę ujemną spróbuj. jeszcze raz! ");
+                System.out.print("Podałeś liczbę ujemną. Spróbuj jeszcze raz! ");
             } finally {
                 sc.nextLine();
             }
