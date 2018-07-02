@@ -16,8 +16,6 @@ public class SquareRoot {
                 number = sc.nextDouble();
 
                 wrongInput = false;
-                result = Math.sqrt(number);
-
 
             } catch (InputMismatchException e) {
                 System.out.println("Podałeś niedozwolony znak. Spróbuj jeszcze raz!");
@@ -31,6 +29,7 @@ public class SquareRoot {
         if (number < 0 ) {
             throw new IllegalArgumentException("Liczba powinna być większa lub równa 0");
         }
+        result = Math.sqrt(number);
         System.out.println("Pierwiastek kwadratowy z liczby " + number + " wynosi: " + result);
 
     }
